@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlatformMovementController : MovementController
 {
     public float jumpStrength;
 
     public LayerMask whatIsGround;
+
+    public UnityEvent onJumpEvent;
+
+    public UnityEvent onLandEvent;
+
+
+
 
     bool onGround;
     bool jumpCancel;
@@ -38,11 +46,13 @@ public class PlatformMovementController : MovementController
 
         rb.velocity = newVel;
 
-        if(IsOnGround())
+        if(IsOnGround() && !onGround && rb.velocity.y <= 0)
         {
             jumpCancel = false;
             onGround = true;
             jumped = false;
+
+            onLandEvent.Invoke();
         }
     }
 
@@ -53,6 +63,8 @@ public class PlatformMovementController : MovementController
         rb.velocity = newVel;
         jumped = true;
         onGround = false;
+
+        onJumpEvent.Invoke();
     }
 
     public bool IsOnGround()
