@@ -6,7 +6,7 @@ public class PlayerInputController : InputController
 {
     private void Update()
     {
-        move.Set(Input.GetAxis("Horizontal"), 0f);
+        move.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         action = Input.GetButtonDown("Fire1");
     }
 }

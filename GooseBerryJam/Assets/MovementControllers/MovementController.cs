@@ -9,18 +9,18 @@ public class MovementController : MonoBehaviour
 
     public InputController inputController;
 
-    public void Move()
+    public virtual void Move()
     {
         rb.velocity = (inputController.move * moveSpeed);
     }
 
-    public void Awake()
+    public virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         inputController = GetComponent<InputController>();
     }
 
-    private void Update()
+    public virtual void Update()
     {
         Move();
     }
