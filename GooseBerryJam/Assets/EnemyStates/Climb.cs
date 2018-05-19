@@ -5,6 +5,7 @@ using UnityEngine;
 public class Climb : EnemyState
 {
     public EnemyState reachTopState;
+    public Vector2[] directions = new Vector2[1] { Vector2.up };
 
     public float waitMin = 1f;
     public float waitMax = 1f;
@@ -48,9 +49,9 @@ public class Climb : EnemyState
     {
         if (ic.move.y != 0)
         {
-            Vector2[] dirs = new Vector2[5] { Vector2.left, Vector2.right, Vector2.up, new Vector2(1, 1), new Vector2(-1, 1) };
+            //Vector2[] dirs = new Vector2[5] { Vector2.left, Vector2.right, Vector2.up, new Vector2(1, 1), new Vector2(-1, 1) };
 
-            ic.move = dirs[Random.Range(0, dirs.Length)];
+            ic.move = directions[Random.Range(0, directions.Length)];
         }
         else
         {

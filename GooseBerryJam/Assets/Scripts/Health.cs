@@ -20,8 +20,6 @@ public class Health : MonoBehaviour
 
     public void Change(int change)
     {
-        if (flashing && change < 0)
-            return;
 
         value += change;
 

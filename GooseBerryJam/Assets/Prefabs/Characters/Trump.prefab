@@ -90,7 +90,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477522203011918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf3f178efed8f942b429717c00e1e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 3
   OnHurt:
     m_PersistentCalls:
       m_Calls: []
@@ -334,8 +334,9 @@ MonoBehaviour:
   heat: 0
   overheatThreshhold: 10
   normalCooldown: 3
-  overheatCooldown: 5
+  overheatCooldown: 3
   attackHeat: 2
+  attackJump: 4
   onAttackEvent:
     m_PersistentCalls:
       m_Calls:
@@ -498,6 +499,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  onGround: 0
   jumped: 0
 --- !u!198 &198272426418959610
 ParticleSystem:

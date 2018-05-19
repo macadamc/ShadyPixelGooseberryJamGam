@@ -11,6 +11,7 @@ public class PlayerAttackController : AttackController
     public float normalCooldown = 5f;
     public float overheatCooldown = 3f;
     public float attackHeat = 3f;
+    public float attackJump = 3f;
 
     bool overheated;
 
@@ -21,26 +22,39 @@ public class PlayerAttackController : AttackController
     public UnityEvent onOverheatStart;
     public UnityEvent onOverheatEnd;
 
+    PlatformMovementController pmc;
+    bool buttonPressed;
+
     private void Start()
     {
         slider = GameObject.FindGameObjectWithTag("StaminaBar").GetComponent<Slider>();
         slider.maxValue = overheatThreshhold;
+        pmc = GetComponent<PlatformMovementController>();
     }
 
     public override void Update()
     {
         if (input.action)
         {
-            if (isAttacking == false && !overheated)
+            if (isAttacking == false && !overheated & !buttonPressed)
             {
-                isAttacking = true;
-                OnAttack();
+                if(pmc.onGround == false)
+                {
+                    isAttacking = true;
+                    OnAttack();
+                }
             }
 
+            buttonPressed = true;
+
+
         }
-        else if (isAttacking)
+        else
         {
-            isAttacking = false;
+            buttonPressed = false;
+
+            if(isAttacking)
+                isAttacking = false;
         }
 
 
@@ -77,5 +91,8 @@ public class PlayerAttackController : AttackController
         CreateProjectile(Vector2.down);
         onAttackEvent.Invoke();
         heat += attackHeat;
+
+        if(pmc.onGround == false)
+            pmc.Jump(attackJump);
     }
 }
