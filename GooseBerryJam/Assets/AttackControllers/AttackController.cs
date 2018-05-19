@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackController : MonoBehaviour
 {
     public bool isAttacking;
-    InputController input;
+    public InputController input;
 
     public GameObject projectile;
 
@@ -14,7 +14,7 @@ public class AttackController : MonoBehaviour
         input = GetComponent<InputController>();
     }
 
-    private void Update()
+    public virtual void Update()
     {
         if (input.action)
         {

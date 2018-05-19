@@ -21,18 +21,19 @@ GameObject:
   - component: {fileID: 4304301949768404}
   - component: {fileID: 212837489900172566}
   - component: {fileID: 114250007632459742}
-  - component: {fileID: 114012615325048516}
   - component: {fileID: 50182392746897686}
   - component: {fileID: 114850977474096138}
   - component: {fileID: 70895935171088662}
-  - component: {fileID: 114498925858157100}
   - component: {fileID: 95012190160490362}
-  - component: {fileID: 114349042970362578}
   - component: {fileID: 114646859066141760}
-  - component: {fileID: 114726905784425380}
   - component: {fileID: 82493992530799130}
+  - component: {fileID: 114894996145929300}
+  - component: {fileID: 114427031681091940}
+  - component: {fileID: 114091347257878656}
+  - component: {fileID: 114329271793423668}
+  - component: {fileID: 114016517509588516}
   m_Layer: 10
-  m_Name: Enemy 2
+  m_Name: EnemyBase
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062772910601324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: -8.5, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -199,7 +200,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114012615325048516
+--- !u!114 &114016517509588516
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,11 +208,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062772910601324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e57f4f32543af5b4f97159edf95a6e61, type: 3}
+  m_Script: {fileID: 11500000, guid: c955119ee5d42d94ab37827cead4ed3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {x: 0, y: 1}
-  action: 0
+--- !u!114 &114091347257878656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062772910601324}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dab76baebea97c43a3ff012b9a2127f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95012190160490362}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: climb
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ic: {fileID: 0}
+  reachTopState: {fileID: 114329271793423668}
+  waitMin: 1
+  waitMax: 1
+  waitTime: 0
 --- !u!114 &114250007632459742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,42 +262,20 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 1
   inputController: {fileID: 0}
---- !u!114 &114349042970362578
+--- !u!114 &114329271793423668
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062772910601324}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c955119ee5d42d94ab37827cead4ed3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d20bc793138bd447acfc8421a7816fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114498925858157100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1062772910601324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9054088119c6a34db74bdc3e90e9aad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onReachTop:
+  onStartEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114012615325048516}
-        m_MethodName: SetRandomRunDirection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 95012190160490362}
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -273,19 +287,48 @@ MonoBehaviour:
           m_StringArgument: walk
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ic: {fileID: 0}
+--- !u!114 &114427031681091940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062772910601324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3776dd69ef51ff74cace4792612674b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95012190160490362}
+        m_MethodName: SetTrigger
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 3
-          m_StringArgument: 
+          m_FloatArgument: 0
+          m_StringArgument: walk
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  onEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ic: {fileID: 0}
+  climbState: {fileID: 114091347257878656}
 --- !u!114 &114646859066141760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -298,72 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 5
---- !u!114 &114726905784425380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1062772910601324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d7ecdabee0d2c47b6a601626a1d74b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  climbPoint: {x: 0, y: 0}
-  OnStartClimb:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 95012190160490362}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: climb
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 3
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 95012190160490362}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: walk
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114850977474096138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -450,9 +427,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114012615325048516}
-        m_MethodName: SetRandomRunDirection
-        m_Mode: 1
+      - m_Target: {fileID: 0}
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -485,6 +462,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114894996145929300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062772910601324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca34bdd44da662459afba2ffac5cd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {x: 0, y: 0}
+  action: 0
 --- !u!212 &212837489900172566
 SpriteRenderer:
   m_ObjectHideFlags: 1
