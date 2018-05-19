@@ -15,7 +15,7 @@ public class SoundEffect : ScriptableObject
 
     public void Play(AudioSource source)
     {
-        source.Stop();
+        source.Stop();  
         source.volume = Random.Range(volumeMin, volumeMax);
         source.pitch = Random.Range(pitchMin, pitchMax);
         source.clip = clip;

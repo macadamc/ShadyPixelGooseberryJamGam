@@ -9,6 +9,11 @@ public class MovementController : MonoBehaviour
 
     public InputController inputController;
 
+    public void SetSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
+
     public virtual void Move()
     {
         rb.velocity = (inputController.move * moveSpeed);

@@ -13,4 +13,9 @@ public class DestroyAfterXSeconds : MonoBehaviour {
         if (lifeSpan <= 0)
             Destroy(gameObject);
 	}
+
+    public void ForceDestroy()
+    {
+        Destroy(gameObject);
+    }
 }

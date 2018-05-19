@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ClimberVictoryCondition : MonoBehaviour {
+public class ReachTopOfWall : MonoBehaviour {
 
-    public UnityEvent OnClimbToTop;
+    public UnityEvent onReachTop;
     Transform finishLine;
     bool finished;
 
@@ -28,7 +28,7 @@ public class ClimberVictoryCondition : MonoBehaviour {
         if(transform.position.y >= finishLine.transform.position.y && !finished)
         {
             finished = true;
-            OnClimbToTop.Invoke();
+            onReachTop.Invoke();
         }
     }
 }
