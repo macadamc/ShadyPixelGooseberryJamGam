@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9951bb23c328ccf438fd89a3c0726400, type: 3}
-  m_Name: Shoot
+  m_Name: Yell
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 59305aec3b0ee0649a3a6214cf89ba86, type: 3}
-  volumeMin: 0.6
-  volumeMax: 0.6
+  clip: {fileID: 8300000, guid: 3296fdd3ecac3c34b99fd765b4074030, type: 3}
+  volumeMin: 1
+  volumeMax: 1
   pitchMin: 0.7
   pitchMax: 1.2
