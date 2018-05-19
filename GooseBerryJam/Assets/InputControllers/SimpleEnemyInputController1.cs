@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleEnemyInputController : InputController {
+public class SimpleEnemyInputController1 : InputController
+{
 
     public void SetRandomRunDirection()
     {
@@ -23,5 +24,4 @@ public class SimpleEnemyInputController : InputController {
         move = Vector2.zero;
 
     }
-
 }
