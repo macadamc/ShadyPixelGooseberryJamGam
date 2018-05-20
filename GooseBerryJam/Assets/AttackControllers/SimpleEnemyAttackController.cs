@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleEnemyAttackController : AttackController
 {
-    GameObject target;
+    public GameObject target;
 
     public void Start()
     {
@@ -13,7 +13,8 @@ public class SimpleEnemyAttackController : AttackController
 
     public override void OnAttack()
     {
-        CreateProjectile((target.transform.position - transform.position).normalized);
+        if(target != null)
+            CreateProjectile((target.transform.position - transform.position).normalized);
     }
 
     public override void Update()
