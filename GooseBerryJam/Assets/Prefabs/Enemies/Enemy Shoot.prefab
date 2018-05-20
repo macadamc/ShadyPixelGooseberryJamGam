@@ -29,12 +29,11 @@ GameObject:
   - component: {fileID: 82493992530799130}
   - component: {fileID: 114894996145929300}
   - component: {fileID: 114427031681091940}
-  - component: {fileID: 114793331213746130}
   - component: {fileID: 114331617863025158}
   - component: {fileID: 114016517509588516}
   - component: {fileID: 114209484320971978}
   m_Layer: 10
-  m_Name: Enemy GroundShoot
+  m_Name: Enemy Shoot
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +225,6 @@ MonoBehaviour:
   isAttacking: 0
   input: {fileID: 0}
   projectile: {fileID: 1158376150792290, guid: e9c41dc14eec2414ebc41bf36ee069d6, type: 2}
-  target: {fileID: 0}
 --- !u!114 &114250007632459742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  moveSpeed: 1.5
+  moveSpeed: 1
   inputController: {fileID: 0}
 --- !u!114 &114331617863025158
 MonoBehaviour:
@@ -297,7 +295,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ic: {fileID: 0}
-  climbState: {fileID: 114793331213746130}
+  climbState: {fileID: 114331617863025158}
 --- !u!114 &114646859066141760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,30 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 5
---- !u!114 &114793331213746130
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1062772910601324}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a65c8d12bfd8694a9ce1b854cc2c104, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ic: {fileID: 0}
-  NextState: {fileID: 114331617863025158}
-  waitTime: 1
 --- !u!114 &114850977474096138
 MonoBehaviour:
   m_ObjectHideFlags: 1
