@@ -2207,8 +2207,12 @@ MonoBehaviour:
   - {fileID: 141254602}
   enemies:
   - {fileID: 1062772910601324, guid: 49b2cb6990bddd645b765ed2e961d6a4, type: 2}
-  minSpawnTime: 1.5
-  maxSpawnTime: 4
+  - {fileID: 1062772910601324, guid: a1f40fe40f41a9541893806bb1c9364d, type: 2}
+  - {fileID: 1062772910601324, guid: 6e90193eb21dcbe45b327325d52c023c, type: 2}
+  - {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a, type: 2}
+  - {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
+  minSpawnTime: 0.25
+  maxSpawnTime: 3
   nextSpawnTime: 0
 --- !u!1001 &1956805088
 Prefab:

@@ -103,6 +103,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224017195801684514}
+  - component: {fileID: 114480852129362414}
+  - component: {fileID: 114701147990825456}
   m_Layer: 5
   m_Name: pnl_GameOver
   m_TagString: Untagged
@@ -392,6 +394,33 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114480852129362414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507066285204238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b4187226e0af340b397d2c95f862d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFire1Pressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114701147990825456}
+        m_MethodName: Load
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Title
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114537291378120120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,6 +509,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intVar: {fileID: 11400000, guid: ff9bd88e79c8c8247b599fb462472bd2, type: 2}
   prefix: 'Score: '
+--- !u!114 &114701147990825456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507066285204238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bf57998b68e71458da7ad1cb476386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114749831821511412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -590,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
