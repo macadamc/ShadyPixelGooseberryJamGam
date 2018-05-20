@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SetTextToIntVar : MonoBehaviour {
 
     public IntVariable intVar;
+    public string prefix;
     Text textObj;
 
 	// Use this for initialization
@@ -16,7 +17,7 @@ public class SetTextToIntVar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        textObj.text = intVar.value.ToString();
+        textObj.text = prefix + intVar.value.ToString();
 		
 	}
 }

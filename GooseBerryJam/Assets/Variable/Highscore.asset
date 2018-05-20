@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9abfa205913cb18498ee2e5dc2fd9973, type: 3}
-  m_Name: Heat_Current
+  m_Name: Highscore
   m_EditorClassIdentifier: 
   value: 0
