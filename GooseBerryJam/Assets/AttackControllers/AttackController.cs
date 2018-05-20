@@ -35,7 +35,7 @@ public class AttackController : MonoBehaviour
     {
         //  spawns object and sets parent
         GameObject spawnObject = Instantiate(projectile);
-
+        spawnObject.GetComponent<DamageOnCollision>().ownerTag = tag;
         //  sets transform of spawned object, user direction is used to place it on one of the entitys sides
         spawnObject.transform.position = (Vector2)gameObject.transform.position + ShootDir;
 
