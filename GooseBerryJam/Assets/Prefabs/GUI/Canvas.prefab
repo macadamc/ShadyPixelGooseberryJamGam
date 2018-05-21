@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 114935771408056408}
   - component: {fileID: 114069416394797722}
   - component: {fileID: 114373386586499414}
-  - component: {fileID: 114667842911976920}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -334,22 +333,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b4187226e0af340b397d2c95f862d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFire1Pressed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114639749299286130}
-        m_MethodName: Load
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Title
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  buttonEvents:
+  - buttonName: Fire1
+    OnPressedEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114639749299286130}
+          m_MethodName: Load
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Title
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    pressed: 0
 --- !u!114 &114373386586499414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -518,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objToFlash: {fileID: 1746483227396718}
-  flashTime: 0.1
+  flashTime: 0.25
 --- !u!114 &114576048158402762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -570,46 +572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf57998b68e71458da7ad1cb476386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114667842911976920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1500064770409796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7bbed2934f18354290f5fa978a490fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Events:
-  - {fileID: 11400000, guid: 76c9392428509fa4b806a518c296c572, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1507066285204238}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1890197619104572}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114739434048292188
 MonoBehaviour:
   m_ObjectHideFlags: 1
