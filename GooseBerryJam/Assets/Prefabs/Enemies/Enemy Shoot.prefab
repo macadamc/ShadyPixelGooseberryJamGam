@@ -239,6 +239,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 1
   inputController: {fileID: 0}
+  stunlockNextInputTime: 0
 --- !u!114 &114331617863025158
 MonoBehaviour:
   m_ObjectHideFlags: 1

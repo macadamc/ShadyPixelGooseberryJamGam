@@ -9,6 +9,8 @@ public class MovementController : MonoBehaviour
 
     public InputController inputController;
 
+    public float stunlockNextInputTime;
+
     public void SetSpeed(float newSpeed)
     {
         moveSpeed = newSpeed;
@@ -16,7 +18,13 @@ public class MovementController : MonoBehaviour
 
     public virtual void Move()
     {
-        rb.velocity = (inputController.move * moveSpeed);
+        Vector2 newinput = Vector2.zero;
+
+        if (Time.time > stunlockNextInputTime)
+            newinput = inputController.move;
+
+
+        rb.velocity = (newinput * moveSpeed);
     }
 
     public virtual void Awake()
@@ -28,5 +36,10 @@ public class MovementController : MonoBehaviour
     public virtual void Update()
     {
         Move();
+    }
+
+    public void StunLock(float timeToStun)
+    {
+        stunlockNextInputTime = Time.time + timeToStun;
     }
 }

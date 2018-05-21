@@ -13,7 +13,8 @@ public class SimpleEnemyAttackController : AttackController
 
     public override void OnAttack()
     {
-        CreateProjectile((target.transform.position - transform.position).normalized);
+        if (target != null)
+            CreateProjectile((target.transform.position - transform.position).normalized);
     }
 
     public override void Update()

@@ -9,6 +9,7 @@ public class DamageOnCollision : MonoBehaviour
     public int damage;
     public UnityEvent OnHit;
     public string ownerTag;
+    public float moveStunTime;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +21,13 @@ public class DamageOnCollision : MonoBehaviour
         {
             hp.Change(-damage);
         }
+
+        MovementController mc = collision.gameObject.GetComponent<MovementController>();
+        if(mc!=null)
+        {
+            mc.StunLock(moveStunTime);
+        }
+
         OnHit.Invoke();
     }
 }

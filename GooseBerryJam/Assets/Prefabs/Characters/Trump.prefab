@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 82576620114179190}
   m_Layer: 10
   m_Name: Trump
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,9 +280,9 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1477522203011918}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 11400000, guid: 76c9392428509fa4b806a518c296c572, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -291,9 +291,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 76c9392428509fa4b806a518c296c572, type: 2}
-        m_MethodName: Raise
-        m_Mode: 1
+      - m_Target: {fileID: 1477522203011918}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -332,10 +332,10 @@ MonoBehaviour:
   input: {fileID: 0}
   projectile: {fileID: 1158376150792290, guid: e9c41dc14eec2414ebc41bf36ee069d6, type: 2}
   heat: 0
-  overheatThreshhold: 10
-  normalCooldown: 3
-  overheatCooldown: 3
-  attackHeat: 2
+  overheatThreshhold: 5
+  normalCooldown: 1
+  overheatCooldown: 1
+  attackHeat: 1
   attackJump: 4
   onAttackEvent:
     m_PersistentCalls:
@@ -452,6 +452,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 4
   inputController: {fileID: 0}
+  stunlockNextInputTime: 0
   jumpStrength: 5
   whatIsGround:
     serializedVersion: 2

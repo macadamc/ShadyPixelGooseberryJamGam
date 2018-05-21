@@ -38,7 +38,7 @@ public class PlayerAttackController : AttackController
         {
             if (isAttacking == false && !overheated & !buttonPressed)
             {
-                if(pmc.onGround == false)
+                if(pmc.IsOnGround() == false)
                 {
                     isAttacking = true;
                     OnAttack();
@@ -88,11 +88,9 @@ public class PlayerAttackController : AttackController
 
     public override void OnAttack()
     {
+        pmc.Jump(attackJump);
         CreateProjectile(Vector2.down);
         onAttackEvent.Invoke();
         heat += attackHeat;
-
-        if(pmc.onGround == false)
-            pmc.Jump(attackJump);
     }
 }
