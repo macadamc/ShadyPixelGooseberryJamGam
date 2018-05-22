@@ -6,7 +6,7 @@ public class DestroyAfterXSeconds : MonoBehaviour {
 
     public float lifeSpan  = 1f;
 
-	void Update ()
+	public virtual void Update ()
     {
         lifeSpan -= Time.deltaTime;
 
