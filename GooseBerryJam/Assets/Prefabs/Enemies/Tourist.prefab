@@ -97,10 +97,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 54591d968b353624981d634e74c221c2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.9330842
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -355,8 +355,8 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: ff9bd88e79c8c8247b599fb462472bd2, type: 2}
-        m_MethodName: ApplyChange
+      - m_Target: {fileID: 11400000, guid: 20eca6dd7ba88ab4bb821c4cc04df16c, type: 2}
+        m_MethodName: AddPointsCombo
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -438,6 +438,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 82493992530799130}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2174fe214e66d8c42afe5c947f960a47, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

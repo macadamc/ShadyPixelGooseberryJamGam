@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe7bcdd4397e54ea799ef282134446, type: 3}
+  m_Name: ScoreManager
+  m_EditorClassIdentifier: 
+  scoreVar: {fileID: 11400000, guid: ff9bd88e79c8c8247b599fb462472bd2, type: 2}
+  comboVar: {fileID: 11400000, guid: 2a207af28b0cab34db32dba98ee417df, type: 2}
