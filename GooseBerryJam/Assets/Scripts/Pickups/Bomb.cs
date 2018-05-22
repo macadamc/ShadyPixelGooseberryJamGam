@@ -18,7 +18,11 @@ public class Bomb : MonoBehaviour
     {
         foreach(Transform  t in activeEnemys.Items)
         {
-            t.GetComponent<Health>().Set(0);
+            if(t.gameObject.GetComponent<SpriteRenderer>().isVisible)
+            {
+                t.GetComponent<Health>().Set(0);
+            }
+            
         }
 
         esm.currentMaxEnemyAmount = Mathf.Clamp(esm.currentMaxEnemyAmount + -EnemySpawnChange, 1, int.MaxValue);

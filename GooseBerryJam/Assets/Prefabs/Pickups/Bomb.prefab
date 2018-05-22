@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ce8f7adb34c8448afd34cf47b28bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemySpawnChange: 2
   activeEnemys: {fileID: 11400000, guid: 3f950a391b2c9cf45b229690e9723f1f, type: 2}
 --- !u!114 &114504629261089492
 MonoBehaviour:

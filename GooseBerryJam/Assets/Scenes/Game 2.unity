@@ -345,6 +345,11 @@ Prefab:
       propertyPath: spawners.Array.data[3]
       value: 
       objectReference: {fileID: 141254602}
+    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: currentMaxEnemyAmount
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
   m_IsPrefabAsset: 0
@@ -2050,12 +2055,42 @@ MonoBehaviour:
   ActivePickups: {fileID: 11400000, guid: 81b64d294c8d5a74c896cca5e7692c2d, type: 2}
   pickups:
   - {fileID: 1470849113162588, guid: 1793c476e1d58d94e99e7c3754c269cc, type: 2}
-  - {fileID: 1470849113162588, guid: fd3e7294f70ef6c48aa4d3940769ea85, type: 2}
   minSpawnTime: 10
   maxSpawnTime: 15
   edgePadding: 1.5
   spawnHeight: 2.5
   maxActivePickups: 3
+--- !u!114 &1850651045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850651038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d809ab432d419364ca5c0ee662f9285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entrys:
+  - executed: 0
+    executeTime: 60
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1850651039}
+          m_MethodName: AddToPickups
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1470849113162588, guid: fd3e7294f70ef6c48aa4d3940769ea85,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 10 second mark!!
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1956805088
 Prefab:
   m_ObjectHideFlags: 0

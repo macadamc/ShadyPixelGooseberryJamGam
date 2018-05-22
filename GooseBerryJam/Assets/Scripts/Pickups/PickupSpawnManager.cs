@@ -60,4 +60,12 @@ public class PickupSpawnManager : MonoBehaviour {
         GameObject pickup = pickups[Random.Range(0, pickups.Count)];
         Instantiate(pickup).transform.position = sPos;
     }
+
+    public void AddToPickups(GameObject prefab)
+    {
+        if(pickups.Contains(prefab) == false)
+        {
+            pickups.Add(prefab);
+        }
+    }
 }
