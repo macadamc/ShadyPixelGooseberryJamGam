@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114091347257878656}
   - component: {fileID: 114329271793423668}
   - component: {fileID: 114016517509588516}
+  - component: {fileID: 114969070065915422}
   m_Layer: 10
   m_Name: EnemyBase Up
   m_TagString: Enemy
@@ -480,6 +481,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
   action: 0
+--- !u!114 &114969070065915422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062772910601324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4499cc5c433ced848837ff26f2e4e0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformRuntimeSet: {fileID: 11400000, guid: 3f950a391b2c9cf45b229690e9723f1f,
+    type: 2}
 --- !u!212 &212837489900172566
 SpriteRenderer:
   m_ObjectHideFlags: 1
