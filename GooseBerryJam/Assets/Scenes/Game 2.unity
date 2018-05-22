@@ -2050,6 +2050,7 @@ MonoBehaviour:
   ActivePickups: {fileID: 11400000, guid: 81b64d294c8d5a74c896cca5e7692c2d, type: 2}
   pickups:
   - {fileID: 1470849113162588, guid: 1793c476e1d58d94e99e7c3754c269cc, type: 2}
+  - {fileID: 1470849113162588, guid: fd3e7294f70ef6c48aa4d3940769ea85, type: 2}
   minSpawnTime: 10
   maxSpawnTime: 15
   edgePadding: 1.5

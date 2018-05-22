@@ -35,6 +35,20 @@ public class Health : MonoBehaviour
             OnHurt.Invoke();
         }
     }
+    public void Set(int value)
+    {
+        this.value = value;
+        if (value <= 0)
+        {
+            OnDeath.Invoke();
+            return;
+        }
+        else
+        {
+            StartCoroutine(DamageFlash(2));
+            OnHurt.Invoke();
+        }
+    }
 
     public IEnumerator DamageFlash(int flashes)
     {
