@@ -451,6 +451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   moveSpeed: 4
+  knockback: {x: 0, y: 0}
+  knockbackDecel: 20
   inputController: {fileID: 0}
   stunlockNextInputTime: 0
   jumpStrength: 5

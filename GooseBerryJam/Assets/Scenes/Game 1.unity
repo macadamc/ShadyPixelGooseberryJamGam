@@ -293,11 +293,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 923928627}
     m_Modifications:
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4226630176364038, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -350,36 +345,6 @@ Prefab:
       propertyPath: spawners.Array.data[3]
       value: 
       objectReference: {fileID: 141254602}
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 1062772910601324, guid: a1f40fe40f41a9541893806bb1c9364d,
-        type: 2}
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.data[2]
-      value: 
-      objectReference: {fileID: 1062772910601324, guid: 6e90193eb21dcbe45b327325d52c023c,
-        type: 2}
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.data[3]
-      value: 
-      objectReference: {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a,
-        type: 2}
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.data[4]
-      value: 
-      objectReference: {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25,
-        type: 2}
-    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 1062772910601324, guid: 49b2cb6990bddd645b765ed2e961d6a4,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
   m_IsPrefabAsset: 0
@@ -2238,11 +2203,6 @@ Prefab:
     - target: {fileID: 4521097615811140, guid: 0649bb7042db00741b2de63ca363162f, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114870690650187744, guid: 0649bb7042db00741b2de63ca363162f,
-        type: 2}
-      propertyPath: knockbackDecel
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0649bb7042db00741b2de63ca363162f, type: 2}

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4226630176364038}
   - component: {fileID: 114410004949860522}
   - component: {fileID: 114343410144726580}
+  - component: {fileID: 114583750916584988}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -66,6 +67,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: fe20ff78663c6b04cbff1a8a1b939f2c, type: 2}
+        m_MethodName: SetValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114410004949860522
@@ -79,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab4b6bb006ff84438a2243b88417c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyTransformSet: {fileID: 11400000, guid: 3f950a391b2c9cf45b229690e9723f1f, type: 2}
   spawners:
   - {fileID: 0}
   - {fileID: 0}
@@ -90,6 +103,21 @@ MonoBehaviour:
   - {fileID: 1062772910601324, guid: 6e90193eb21dcbe45b327325d52c023c, type: 2}
   - {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a, type: 2}
   - {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
-  minSpawnTime: 1.5
-  maxSpawnTime: 4
+  minSpawnTime: 0.1
+  maxSpawnTime: 0.5
+  currentMaxEnemyAmount: 3
+  maxEnemyIncreaseDelay: 4
   nextSpawnTime: 0
+  nextMaxEnemyIncrease: 0
+--- !u!114 &114583750916584988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640440848625758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd36d0af7673294499103c03392f639f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTime: {fileID: 11400000, guid: fe20ff78663c6b04cbff1a8a1b939f2c, type: 2}
