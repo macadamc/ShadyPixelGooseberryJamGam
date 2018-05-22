@@ -332,10 +332,10 @@ MonoBehaviour:
   input: {fileID: 0}
   projectile: {fileID: 1158376150792290, guid: e9c41dc14eec2414ebc41bf36ee069d6, type: 2}
   heat: 0
-  overheatThreshhold: 5
-  normalCooldown: 1
-  overheatCooldown: 1
-  attackHeat: 1
+  overheatThreshhold: 10
+  normalCooldown: 1.5
+  overheatCooldown: 1.5
+  attackHeat: 1.5
   attackJump: 4
   onAttackEvent:
     m_PersistentCalls:

@@ -38,7 +38,7 @@ public class PlayerAttackController : AttackController
         {
             if (isAttacking == false && !overheated & !buttonPressed)
             {
-                if(pmc.IsOnGround() == false)
+                if(pmc.IsOnGround() == false && pmc.onGround == false)
                 {
                     isAttacking = true;
                     OnAttack();
