@@ -6,8 +6,10 @@ using UnityEngine.Events;
 public class PlatformMovementController : MovementController
 {
     public float jumpStrength;
+    public float bounceStrength;
 
     public LayerMask whatIsGround;
+    public LayerMask whatIsEnemy;
 
     public UnityEvent onJumpEvent;
 
@@ -25,6 +27,12 @@ public class PlatformMovementController : MovementController
     public override void Update()
     {
         base.Update();
+    }
+
+    public void FixedUpdate()
+    {
+        if (rb.velocity.y > 0)
+            return;
     }
 
     public override void Move()
@@ -74,6 +82,24 @@ public class PlatformMovementController : MovementController
         RaycastHit2D hit;
         hit = Physics2D.Raycast(transform.position, Vector2.down, 0.55f, whatIsGround);
         return hit.collider != null;
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (rb.velocity.y >= 0)
+            return;
+
+        if(collider.gameObject.tag == "Enemy")
+        {
+            Jump(bounceStrength);
+            Health hp = collider.gameObject.GetComponent<Health>();
+            if (hp != null)
+                hp.Change(-1);
+
+            MovementController mc = collider.gameObject.GetComponent<MovementController>();
+            if (mc != null)
+                mc.StunLock(0.25f);
+        }
     }
 
 

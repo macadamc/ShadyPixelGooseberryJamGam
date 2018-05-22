@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4900372702236268}
   - component: {fileID: 198272426418959610}
   - component: {fileID: 199429632769860992}
-  m_Layer: 10
+  m_Layer: 4
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 114047964586560830}
   - component: {fileID: 114158752865037122}
   - component: {fileID: 82576620114179190}
-  m_Layer: 10
+  m_Layer: 4
   m_Name: Trump
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 4100875012879958}
   - component: {fileID: 198453526986516752}
   - component: {fileID: 199617809332853206}
-  m_Layer: 10
+  m_Layer: 4
   m_Name: OverheatPar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,9 +456,13 @@ MonoBehaviour:
   inputController: {fileID: 0}
   stunlockNextInputTime: 0
   jumpStrength: 5
+  bounceStrength: 4.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 1024
   onJumpEvent:
     m_PersistentCalls:
       m_Calls:

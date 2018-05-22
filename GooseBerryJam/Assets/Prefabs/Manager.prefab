@@ -98,11 +98,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   enemies:
-  - {fileID: 1062772910601324, guid: 49b2cb6990bddd645b765ed2e961d6a4, type: 2}
   - {fileID: 1062772910601324, guid: a1f40fe40f41a9541893806bb1c9364d, type: 2}
   - {fileID: 1062772910601324, guid: 6e90193eb21dcbe45b327325d52c023c, type: 2}
   - {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a, type: 2}
   - {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
+  - {fileID: 1062772910601324, guid: 7b08164d666b8f843a5ca760917e7ec9, type: 2}
+  - {fileID: 1062772910601324, guid: 41eba572b2ba9eb469966dfde40fa81c, type: 2}
   minSpawnTime: 0.1
   maxSpawnTime: 0.5
   currentMaxEnemyAmount: 3
