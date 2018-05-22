@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Climb : EnemyState
 {
+
+    Camera cam;
+    float camHeight;
+    float camWidth;
+
     public EnemyState reachTopState;
     public Vector2[] directions = new Vector2[1] { Vector2.up };
 
@@ -15,6 +20,10 @@ public class Climb : EnemyState
 
     public override void OnEnable()
     {
+        cam = Camera.main;
+        camHeight = 2f * cam.orthographicSize;
+        camWidth = camHeight * cam.aspect;
+
         base.OnEnable();
         finishLine = GameObject.FindGameObjectWithTag("Finish").transform;
     }
@@ -29,15 +38,25 @@ public class Climb : EnemyState
             return;
         }
 
-        if (waitTime <= 0)
+        if (IsInBounds())
         {
-            waitTime = Random.Range(waitMin, waitMax);
-            ChangeDirection();
+            if (waitTime <= 0)
+            {
+                waitTime = Random.Range(waitMin, waitMax);
+                ChangeDirection();
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
         }
         else
         {
-            waitTime -= Time.deltaTime;
+            ic.move.x = transform.position.x > 0 ? -1 : 1;
+            waitTime = Random.Range(waitMin, waitMax);
         }
+
+        
     }
 
     public override void OnDisable()
@@ -62,5 +81,10 @@ public class Climb : EnemyState
     public bool AtTop()
     {
         return transform.position.y >= finishLine.transform.position.y;
+    }
+
+    bool IsInBounds()
+    {
+        return transform.position.x >= -camWidth / 2f + 1f && transform.position.x <= camWidth / 2f - 1f;
     }
 }

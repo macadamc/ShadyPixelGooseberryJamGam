@@ -28,12 +28,12 @@ GameObject:
   - component: {fileID: 114646859066141760}
   - component: {fileID: 82493992530799130}
   - component: {fileID: 114894996145929300}
-  - component: {fileID: 114427031681091940}
-  - component: {fileID: 114091347257878656}
-  - component: {fileID: 114329271793423668}
   - component: {fileID: 114016517509588516}
+  - component: {fileID: 114282354075934626}
+  - component: {fileID: 114125119773070542}
+  - component: {fileID: 114797407495408618}
   m_Layer: 10
-  m_Name: EnemyBase Cardial
+  m_Name: Tourist
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1062772910601324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: -4.15, y: -3.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c955119ee5d42d94ab37827cead4ed3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114091347257878656
+--- !u!114 &114125119773070542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,34 +219,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062772910601324}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dab76baebea97c43a3ff012b9a2127f, type: 3}
+  m_Script: {fileID: 11500000, guid: 062bf209a0b105a42b02f09129358300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onStartEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 95012190160490362}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: climb
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onEndEvent:
@@ -255,13 +233,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ic: {fileID: 0}
-  reachTopState: {fileID: 114329271793423668}
-  directions:
-  - {x: -1, y: 0}
-  - {x: 1, y: 0}
-  waitMin: 1
-  waitMax: 1
-  waitTime: 0
+  minWait: 1
+  maxWait: 3
+  NextState: {fileID: 114282354075934626}
 --- !u!114 &114250007632459742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,7 +253,7 @@ MonoBehaviour:
   knockbackDecel: 10000
   inputController: {fileID: 0}
   stunlockNextInputTime: 0
---- !u!114 &114329271793423668
+--- !u!114 &114282354075934626
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,34 +261,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062772910601324}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d20bc793138bd447acfc8421a7816fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ff3246793a2ac44c8b178c8b856c8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onStartEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 95012190160490362}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: walk
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 2.5
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onEndEvent:
@@ -323,51 +275,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ic: {fileID: 0}
---- !u!114 &114427031681091940
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1062772910601324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3776dd69ef51ff74cace4792612674b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStartEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 95012190160490362}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: walk
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114250007632459742}
-        m_MethodName: SetSpeed
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 2
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  ic: {fileID: 0}
-  climbState: {fileID: 114091347257878656}
 --- !u!114 &114646859066141760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,6 +287,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 5
+--- !u!114 &114797407495408618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062772910601324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4556c77bfd9ec45ae6d0c558218890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95012190160490362}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: walk
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ic: {fileID: 0}
+  minExitTime: 10
+  maxExitTime: 15
+  NextState: {fileID: 114125119773070542}
 --- !u!114 &114850977474096138
 MonoBehaviour:
   m_ObjectHideFlags: 1
