@@ -5,9 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Runtime Sets/Weighted GameObject Runtime Set")]
 public class WeightedGameObjectSet : RuntimeSet<WeightedGameObject>
 {
-    public void Add(GameObject prefab, float weight) { }
-    public void Remove() { }
-
     public GameObject Choose()
     {
         float total = 0;

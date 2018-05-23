@@ -5,7 +5,6 @@ using UnityEngine;
 public class PickupSpawnManager : MonoBehaviour {
 
     public TransformRuntimeSet ActivePickups;
-    //public List<GameObject> pickups;
     public WeightedGameObjectSet startingSet;
     public WeightedGameObjectSet pickups;
 

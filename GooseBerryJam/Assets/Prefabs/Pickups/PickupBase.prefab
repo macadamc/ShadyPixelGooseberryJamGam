@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4714506222461840}
   - component: {fileID: 212764181824952826}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114504629261089492}
   - component: {fileID: 114030002157302232}
   - component: {fileID: 114664531914721516}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PickupBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}

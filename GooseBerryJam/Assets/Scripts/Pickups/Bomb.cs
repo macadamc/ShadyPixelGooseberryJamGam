@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bomb : MonoBehaviour
+public class Bomb : Pickup
 {
     EnemySpawnManager esm;
 
@@ -22,9 +22,9 @@ public class Bomb : MonoBehaviour
             {
                 t.GetComponent<Health>().Set(0);
             }
-            
         }
         esm.nextSpawnTime = 0;
         esm.currentMaxEnemyAmount = Mathf.Clamp(esm.currentMaxEnemyAmount + -EnemySpawnChange, 1, int.MaxValue);
+        GameObject.Find("txt_Combo").SetActive(false);
     }
 }
