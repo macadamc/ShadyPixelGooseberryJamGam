@@ -6,6 +6,7 @@ public class PickupSpawnManager : MonoBehaviour {
 
     public TransformRuntimeSet ActivePickups;
     //public List<GameObject> pickups;
+    public WeightedGameObjectSet startingSet;
     public WeightedGameObjectSet pickups;
 
     public float minSpawnTime;
@@ -30,12 +31,21 @@ public class PickupSpawnManager : MonoBehaviour {
 
     private void Awake()
     {
+        if (ActivePickups.Items == null)
+            ActivePickups.Items = new List<Transform>();
+        pickups.Items.Clear();
         cam = Camera.main;
         camHeight = 2f * cam.orthographicSize;
         camWidth = camHeight * cam.aspect;
         wallTopY = GameObject.FindGameObjectWithTag("Finish").transform.position.y;
 
         SetSpawnTime();
+
+        
+        foreach(WeightedGameObject wObj in startingSet.Items)
+        {
+            pickups.Add(wObj);
+        }
     }
 
     private void Update()
@@ -59,15 +69,6 @@ public class PickupSpawnManager : MonoBehaviour {
 
         //GameObject pickup = pickups[Random.Range(0, pickups.Count)];
         Instantiate(pickups.Choose()).transform.position = sPos;
-    }
-
-    public void AddToPickups(GameObject prefab)
-    {
-
-        //if(pickups.Contains(prefab) == false)
-        {
-            //pickups.Add(prefab);
-        }
     }
 
 }

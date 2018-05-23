@@ -2052,8 +2052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36e20c87278a94488780f41cf0ae38c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActivePickups: {fileID: 11400000, guid: 81b64d294c8d5a74c896cca5e7692c2d, type: 2}
-  pickups: {fileID: 11400000, guid: 5d31c7f59d0ea924d90176f35c052bfd, type: 2}
+  ActivePickups: {fileID: 11400000, guid: 7df582ff5a940184583709c15493e047, type: 2}
+  startingSet: {fileID: 11400000, guid: 5d31c7f59d0ea924d90176f35c052bfd, type: 2}
+  pickups: {fileID: 11400000, guid: 2c9bc5acb2c56714bb7c0c7473a54048, type: 2}
   minSpawnTime: 3
   maxSpawnTime: 5
   edgePadding: 1.5
@@ -2076,7 +2077,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 5d31c7f59d0ea924d90176f35c052bfd, type: 2}
+        - m_Target: {fileID: 11400000, guid: 2c9bc5acb2c56714bb7c0c7473a54048, type: 2}
           m_MethodName: Add
           m_Mode: 2
           m_Arguments:

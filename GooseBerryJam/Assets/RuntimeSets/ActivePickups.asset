@@ -8,9 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c613a936d241f474fafbba1de9aaa322, type: 3}
-  m_Name: WeightedPickups
+  m_Script: {fileID: 11500000, guid: 05271b7063884a44f9fa83a1262b5a0d, type: 3}
+  m_Name: ActivePickups
   m_EditorClassIdentifier: 
-  Items:
-  - {fileID: 11400000, guid: 0b8b5967ed34e944891613bf665969f9, type: 2}
-  - {fileID: 11400000, guid: c915d768776b07b42be43129c03b0e25, type: 2}
+  Items: []
