@@ -1,16 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BuffClimbersState : EnemyState
 {
+    UnityAction OnDeath;
     List<EnemyState> buffed;
-
+    Health hp;
     public float climbSpeedBuff;
 
-    public override void OnDisable()
+    public override void OnEnable()
     {
-        foreach(EnemyState state in buffed)
+        OnDeath += onDeathCallback;
+        GetComponent<Health>().OnDeath.AddListener(OnDeath);
+        buffed = new List<EnemyState>();
+        base.OnEnable();
+        ic.move = Vector2.zero;
+    }
+
+    void onDeathCallback()
+    {
+        foreach (EnemyState state in buffed)
         {
             if (state != null && state.enabled)
             {
@@ -18,14 +29,6 @@ public class BuffClimbersState : EnemyState
             }
         }
     }
-
-    public override void OnEnable()
-    {
-        buffed = new List<EnemyState>();
-        base.OnEnable();
-        ic.move = Vector2.zero;
-    }
-
     public override void Update()
     {
         BuffEnemys();

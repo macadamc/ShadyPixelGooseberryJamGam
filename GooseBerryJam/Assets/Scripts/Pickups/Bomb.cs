@@ -25,6 +25,6 @@ public class Bomb : Pickup
         }
         esm.nextSpawnTime = 0;
         esm.currentMaxEnemyAmount = Mathf.Clamp(esm.currentMaxEnemyAmount + -EnemySpawnChange, 1, int.MaxValue);
-        GameObject.Find("txt_Combo").SetActive(false);
+        GameObject.Find("txt_Combo").SetActive(false);//hack
     }
 }
