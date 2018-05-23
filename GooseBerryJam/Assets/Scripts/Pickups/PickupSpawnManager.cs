@@ -5,8 +5,8 @@ using UnityEngine;
 public class PickupSpawnManager : MonoBehaviour {
 
     public TransformRuntimeSet ActivePickups;
-
-    public List<GameObject> pickups;
+    //public List<GameObject> pickups;
+    public WeightedGameObjectSet pickups;
 
     public float minSpawnTime;
     public float maxSpawnTime;
@@ -57,15 +57,17 @@ public class PickupSpawnManager : MonoBehaviour {
             Random.Range(wallTopY, wallTopY + spawnHeight)
             );
 
-        GameObject pickup = pickups[Random.Range(0, pickups.Count)];
-        Instantiate(pickup).transform.position = sPos;
+        //GameObject pickup = pickups[Random.Range(0, pickups.Count)];
+        Instantiate(pickups.Choose()).transform.position = sPos;
     }
 
     public void AddToPickups(GameObject prefab)
     {
-        if(pickups.Contains(prefab) == false)
+
+        //if(pickups.Contains(prefab) == false)
         {
-            pickups.Add(prefab);
+            //pickups.Add(prefab);
         }
     }
+
 }

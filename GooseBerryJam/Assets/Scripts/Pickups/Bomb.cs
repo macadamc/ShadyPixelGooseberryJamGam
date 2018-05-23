@@ -24,7 +24,7 @@ public class Bomb : MonoBehaviour
             }
             
         }
-
+        esm.nextSpawnTime = 0;
         esm.currentMaxEnemyAmount = Mathf.Clamp(esm.currentMaxEnemyAmount + -EnemySpawnChange, 1, int.MaxValue);
     }
 }
