@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     public int value;
-
+    public IntVariable intVarToSet;
     public UnityEvent OnHurt;
     public UnityEvent OnDeath;
 
@@ -16,11 +16,13 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         rend = GetComponentInChildren<SpriteRenderer>();
+
+        if (intVarToSet)
+            intVarToSet.value = value;
     }
 
     public void Change(int change)
     {
-
         value += change;
 
         if(value <= 0)
@@ -34,6 +36,9 @@ public class Health : MonoBehaviour
             StartCoroutine(DamageFlash(2));
             OnHurt.Invoke();
         }
+
+        if (intVarToSet)
+            intVarToSet.value = value;
     }
     public void Set(int value)
     {
@@ -48,6 +53,9 @@ public class Health : MonoBehaviour
             StartCoroutine(DamageFlash(2));
             OnHurt.Invoke();
         }
+
+        if (intVarToSet)
+            intVarToSet.value = value;
     }
 
     public IEnumerator DamageFlash(int flashes)

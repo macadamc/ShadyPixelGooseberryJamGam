@@ -9,13 +9,14 @@ public class Flash : MonoBehaviour {
 
     float nextFlashTime;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    private void OnEnable()
+    {
+        objToFlash.SetActive(true);
+        SetNextFlashTime();
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if(Time.time > nextFlashTime)
         {

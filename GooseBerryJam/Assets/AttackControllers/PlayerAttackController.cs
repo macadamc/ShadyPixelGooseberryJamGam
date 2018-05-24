@@ -8,16 +8,22 @@ public class PlayerAttackController : AttackController
 {
     public float heat;
     public float overheatThreshhold = 25f;
+    public float warningThresholdOn = 20f;
+    public float warningThresholdOff = 18f;
     public float normalCooldown = 5f;
     public float overheatCooldown = 3f;
     public float attackHeat = 3f;
     public float attackJump = 3f;
 
     bool overheated;
+    bool warning;
 
     Slider slider;
 
     public UnityEvent onAttackEvent;
+
+    public UnityEvent onWarningStart;
+    public UnityEvent onWarningEnd;
 
     public UnityEvent onOverheatStart;
     public UnityEvent onOverheatEnd;
@@ -58,10 +64,28 @@ public class PlayerAttackController : AttackController
         }
 
 
-        if (heat >= overheatThreshhold && !overheated)
+        if(!overheated)
         {
-            overheated = true;
-            onOverheatStart.Invoke();
+            if (heat >= warningThresholdOn && !warning)
+            {
+                warning = true;
+                onWarningStart.Invoke();
+            }
+
+            if (heat <= warningThresholdOff && warning)
+            {
+                warning = false;
+                onWarningEnd.Invoke();
+            }
+
+            if (heat >= overheatThreshhold)
+            {
+                overheated = true;
+                onOverheatStart.Invoke();
+
+                warning = false;
+                onWarningEnd.Invoke();
+            }
         }
 
         if(heat > 0)

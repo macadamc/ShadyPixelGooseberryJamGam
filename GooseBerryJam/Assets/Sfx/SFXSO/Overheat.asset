@@ -8,8 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecfb03860490b3244be9b12d3435eacf, type: 3}
-  m_Name: PointsPickup-9
+  m_Script: {fileID: 11500000, guid: 9951bb23c328ccf438fd89a3c0726400, type: 3}
+  m_Name: Overheat
   m_EditorClassIdentifier: 
-  obj: {fileID: 1470849113162588, guid: 1793c476e1d58d94e99e7c3754c269cc, type: 2}
-  weight: 15
+  clip: {fileID: 8300000, guid: a0a5ab2a1cf72af4baba24009098b381, type: 3}
+  volumeMin: 1
+  volumeMax: 1
+  pitchMin: 0.9
+  pitchMax: 1.1

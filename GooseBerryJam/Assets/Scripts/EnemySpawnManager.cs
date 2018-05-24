@@ -13,6 +13,7 @@ public class EnemySpawnManager : MonoBehaviour
     public float minSpawnTime = 1f;
     public float maxSpawnTime = 1.5f;
     public int currentMaxEnemyAmount = 1;
+    public int totalMaxEnemyAmount = 20;
     public float maxEnemyIncreaseDelay = 5f;
 
     [HideInInspector]
@@ -47,7 +48,7 @@ public class EnemySpawnManager : MonoBehaviour
             SpawnEnemy();
         }
 
-        if(Time.time >= nextMaxEnemyIncrease)
+        if(Time.time >= nextMaxEnemyIncrease && currentMaxEnemyAmount < totalMaxEnemyAmount)
         {
             SetNextMaxEnemyIncrease();
             currentMaxEnemyAmount++;
