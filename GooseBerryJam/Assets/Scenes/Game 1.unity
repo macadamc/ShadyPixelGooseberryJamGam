@@ -345,6 +345,46 @@ Prefab:
       propertyPath: spawners.Array.data[3]
       value: 
       objectReference: {fileID: 141254602}
+    - target: {fileID: 224319679034818870, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224319679034818870, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224668121558538346, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224668121558538346, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224166654529239650, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 224166654529239650, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114333872189492914, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: imageWidth
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114072226757208322, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: imageWidth
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
   m_IsPrefabAsset: 0

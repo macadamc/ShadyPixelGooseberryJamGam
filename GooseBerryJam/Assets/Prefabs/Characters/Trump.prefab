@@ -343,17 +343,6 @@ MonoBehaviour:
   onAttackEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 198272426418959610}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 43ede57f38ea8d9438a65f543ce849f3, type: 2}
         m_MethodName: Play
         m_Mode: 2
@@ -534,6 +523,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 198272426418959610}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onLandEvent:
@@ -655,7 +655,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
+      scalar: 1
       minScalar: 0.2
       maxCurve:
         serializedVersion: 2
@@ -824,7 +824,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.125
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1146,7 +1146,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.25
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1459,7 +1459,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 10
+        scalar: 5
         minScalar: 0
         maxCurve:
           serializedVersion: 2
@@ -1901,7 +1901,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
-    enabled: 0
+    enabled: 1
     mode: 0
     frameOverTime:
       serializedVersion: 2
@@ -2009,7 +2009,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    tilesX: 1
+    tilesX: 4
     tilesY: 1
     animationType: 0
     rowIndex: 0
@@ -5245,7 +5245,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
+      scalar: 1
       minScalar: 0.2
       maxCurve:
         serializedVersion: 2
@@ -5298,8 +5298,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.25
+      scalar: 0.5
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5352,7 +5352,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0, b: 0, a: 1}
+      maxColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5414,7 +5414,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.125
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5817,7 +5817,7 @@ ParticleSystem:
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 1
-    sphericalDirectionAmount: 0
+    sphericalDirectionAmount: 1
     randomPositionAmount: 0
     radius:
       value: 0.5
@@ -6049,7 +6049,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 10
+        scalar: 5
         minScalar: 0
         maxCurve:
           serializedVersion: 2
@@ -6491,7 +6491,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
-    enabled: 0
+    enabled: 1
     mode: 0
     frameOverTime:
       serializedVersion: 2
@@ -6599,7 +6599,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    tilesX: 1
+    tilesX: 4
     tilesY: 1
     animationType: 0
     rowIndex: 0
@@ -9772,7 +9772,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a4ad12f396dbde141982aa60125ea5be, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9829,7 +9829,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a4ad12f396dbde141982aa60125ea5be, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
