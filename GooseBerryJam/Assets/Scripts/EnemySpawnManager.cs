@@ -7,7 +7,9 @@ public class EnemySpawnManager : MonoBehaviour
     [Header("References")]
     public TransformRuntimeSet enemyTransformSet;
     public List<Transform> spawners = new List<Transform>();
-    public List<GameObject> enemies = new List<GameObject>();
+    //public List<GameObject> enemies = new List<GameObject>();
+    public WeightedGameObjectSet enemysSet;
+    public WeightedGameObjectSet startingEnemys;
 
     [Header("Spawn Info")]
     public float minSpawnTime = 1f;
@@ -23,6 +25,16 @@ public class EnemySpawnManager : MonoBehaviour
 
     public void OnEnable()
     {
+        if (enemysSet.Items == null)
+            enemysSet.Items = new List<WeightedGameObject>();
+
+        enemysSet.Items.Clear();
+
+        foreach (WeightedGameObject wObj in startingEnemys.Items)
+        {
+            enemysSet.Add(wObj);
+        }
+
         SetSpawnTime();
         SetNextMaxEnemyIncrease();
     }
@@ -60,9 +72,8 @@ public class EnemySpawnManager : MonoBehaviour
         SetSpawnTime();
 
         Transform spawner = spawners[Random.Range(0, spawners.Count)];
-        GameObject enemy = enemies[Random.Range(0, enemies.Count)];
 
-        Instantiate(enemy).transform.position = spawner.position;
+        Instantiate(enemysSet.Choose()).transform.position = spawner.position;
 
     }
 }

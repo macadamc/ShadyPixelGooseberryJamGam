@@ -7,6 +7,7 @@ public class FindClimbPoint : EnemyState
     Vector2 climbPoint;
 
     public EnemyState climbState;
+    public float padding;
 
     public override void OnDisable()
     {
@@ -21,7 +22,7 @@ public class FindClimbPoint : EnemyState
         float height = 2f * cam.orthographicSize;
         float width = height * cam.aspect;
 
-        climbPoint.x = Random.Range(-width / 2f + 1f, width / 2f - 1f) + cam.transform.position.x;
+        climbPoint.x = Random.Range(-width / 2f + padding, width / 2f - padding) + cam.transform.position.x;
     }
 
     public override void Update()

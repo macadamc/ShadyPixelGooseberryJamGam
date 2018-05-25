@@ -302,6 +302,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   ic: {fileID: 0}
   climbState: {fileID: 114091347257878656}
+  padding: 3
 --- !u!114 &114646859066141760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
+  intVarToSet: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
       m_Calls:

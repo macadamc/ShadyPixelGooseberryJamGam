@@ -348,8 +348,20 @@ Prefab:
     - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
         type: 2}
       propertyPath: currentMaxEnemyAmount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: enemysSet
+      value: 
+      objectReference: {fileID: 11400000, guid: e69dc77822d6b7849b90ec1f181a7a38,
+        type: 2}
+    - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: startingEnemys
+      value: 
+      objectReference: {fileID: 11400000, guid: fb03ac6f89218da4aa79e611a6666601,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
   m_IsPrefabAsset: 0

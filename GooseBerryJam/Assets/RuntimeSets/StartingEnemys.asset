@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c613a936d241f474fafbba1de9aaa322, type: 3}
+  m_Name: StartingEnemys
+  m_EditorClassIdentifier: 
+  Items:
+  - {fileID: 11400000, guid: 3e0c35ead521fe346965727a6d560c6f, type: 2}
+  - {fileID: 11400000, guid: 34f22215615da924db94ae66e403890b, type: 2}
+  - {fileID: 11400000, guid: b28cd93c8bf498d46ba1cb54b8986860, type: 2}
+  - {fileID: 11400000, guid: a5a889b5c83775447a76128b8d953949, type: 2}
+  - {fileID: 11400000, guid: 9bd6290a36ef8ff408cb6d348f98337e, type: 2}
+  - {fileID: 11400000, guid: 4cbd6e6d0db439e4e81ebdadf86bbfa5, type: 2}
+  - {fileID: 11400000, guid: d9ba9eb8d0bbb5c4cb244bff10ff8f3d, type: 2}
