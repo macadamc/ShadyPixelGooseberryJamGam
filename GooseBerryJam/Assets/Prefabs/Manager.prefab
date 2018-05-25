@@ -324,6 +324,8 @@ GameObject:
   - component: {fileID: 114029323200042958}
   - component: {fileID: 114410004810989822}
   - component: {fileID: 114513873066257378}
+  - component: {fileID: 114404456136290876}
+  - component: {fileID: 114669167590951646}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1047,6 +1049,25 @@ MonoBehaviour:
   edgePadding: 1.5
   spawnHeight: 2.5
   maxActivePickups: 3
+--- !u!114 &114404456136290876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640440848625758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a36e20c87278a94488780f41cf0ae38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivePickups: {fileID: 11400000, guid: 7df582ff5a940184583709c15493e047, type: 2}
+  startingSet: {fileID: 11400000, guid: 5d31c7f59d0ea924d90176f35c052bfd, type: 2}
+  pickups: {fileID: 11400000, guid: 2c9bc5acb2c56714bb7c0c7473a54048, type: 2}
+  minSpawnTime: 3
+  maxSpawnTime: 5
+  edgePadding: 1.5
+  spawnHeight: 2.5
+  maxActivePickups: 3
 --- !u!114 &114410004810989822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1082,7 +1103,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640440848625758}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dab4b6bb006ff84438a2243b88417c37, type: 3}
   m_Name: 
@@ -1093,13 +1114,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  enemies:
-  - {fileID: 1062772910601324, guid: a1f40fe40f41a9541893806bb1c9364d, type: 2}
-  - {fileID: 1062772910601324, guid: 6e90193eb21dcbe45b327325d52c023c, type: 2}
-  - {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a, type: 2}
-  - {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
-  - {fileID: 1062772910601324, guid: 7b08164d666b8f843a5ca760917e7ec9, type: 2}
-  - {fileID: 1062772910601324, guid: 41eba572b2ba9eb469966dfde40fa81c, type: 2}
+  enemysSet: {fileID: 11400000, guid: e69dc77822d6b7849b90ec1f181a7a38, type: 2}
+  startingEnemys: {fileID: 11400000, guid: fb03ac6f89218da4aa79e611a6666601, type: 2}
   minSpawnTime: 0.1
   maxSpawnTime: 0.5
   currentMaxEnemyAmount: 4
@@ -1443,6 +1459,37 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Score: 0000'
+--- !u!114 &114669167590951646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640440848625758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d809ab432d419364ca5c0ee662f9285f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entrys:
+  - executed: 0
+    executeTime: 60
+    events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2c9bc5acb2c56714bb7c0c7473a54048, type: 2}
+          m_MethodName: Add
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: c915d768776b07b42be43129c03b0e25,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: WeightedGameObject, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 10 second mark!!
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &114678662433122218
 MonoBehaviour:
   m_ObjectHideFlags: 1
