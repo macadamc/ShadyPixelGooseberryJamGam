@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecfb03860490b3244be9b12d3435eacf, type: 3}
-  m_Name: Climber_Straight-5
+  m_Name: Climber_Diagonal-7
   m_EditorClassIdentifier: 
-  obj: {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
-  weight: 5
+  obj: {fileID: 1062772910601324, guid: 80e7c8ef6e24d264a81870df98dc660a, type: 2}
+  weight: 7
