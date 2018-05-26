@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidth: 16
-  scrollSpeed: 0.25
+  scrollSpeed: 0.5
 --- !u!212 &974842179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2237,7 +2237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidth: 16
-  scrollSpeed: 0.05
+  scrollSpeed: 0.1
 --- !u!212 &1635529794
 SpriteRenderer:
   m_ObjectHideFlags: 0
