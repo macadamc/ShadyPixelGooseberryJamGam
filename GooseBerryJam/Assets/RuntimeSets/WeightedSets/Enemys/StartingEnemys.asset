@@ -8,8 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecfb03860490b3244be9b12d3435eacf, type: 3}
-  m_Name: Climber_Straight-5
+  m_Script: {fileID: 11500000, guid: c613a936d241f474fafbba1de9aaa322, type: 3}
+  m_Name: StartingEnemys
   m_EditorClassIdentifier: 
-  obj: {fileID: 1062772910601324, guid: c0c1397676c844944baf342285280a25, type: 2}
-  weight: 5
+  Items:
+  - {fileID: 11400000, guid: d9ba9eb8d0bbb5c4cb244bff10ff8f3d, type: 2}
+  - {fileID: 11400000, guid: 9bd6290a36ef8ff408cb6d348f98337e, type: 2}

@@ -29,4 +29,12 @@ public class WeightedGameObjectSet : RuntimeSet<WeightedGameObject>
 
         return null;
     }
+
+    public void Add(WeightedGameObjectSet addList)
+    {
+        foreach (WeightedGameObject i in addList.Items)
+        {
+            Add(i);
+        }
+    }
 }

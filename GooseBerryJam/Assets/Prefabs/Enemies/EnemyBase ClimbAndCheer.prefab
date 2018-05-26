@@ -237,6 +237,17 @@ MonoBehaviour:
           m_StringArgument: climb
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114250007632459742}
+        m_MethodName: SetSpeed
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.75
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onEndEvent:
@@ -293,6 +304,17 @@ MonoBehaviour:
           m_StringArgument: walk
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114250007632459742}
+        m_MethodName: SetSpeed
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onEndEvent:
@@ -326,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf3f178efed8f942b429717c00e1e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  value: 3
   intVarToSet: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
