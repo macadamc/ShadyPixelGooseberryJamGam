@@ -10,7 +10,7 @@ public class ScoreManager : ScriptableObject {
 
     public void AddPointsCombo(int value)
     {
-        scoreVar.value += (value * comboVar.value);
+        scoreVar.value += (value * (1+comboVar.value));
     }
 
     public void AddPointsFlat(int value)
