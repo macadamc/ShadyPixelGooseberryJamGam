@@ -13,8 +13,7 @@ public class HighScoreLoader : MonoBehaviour
     {
         slm.filePath = Application.persistentDataPath + "/HighScore.bin";
 
-        if (slm.data == null)
-            slm.data = new Dictionary<string, int>();
+        slm.data = new Dictionary<string, int>();
 
         FileInfo info = new FileInfo(slm.filePath);
 

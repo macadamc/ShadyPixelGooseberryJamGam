@@ -26,6 +26,10 @@ public class SaveLoadManager : ScriptableObject
         {
             highScore.SetValue(data["HighScore"]);
         }
+        else
+        {
+            highScore.SetValue(0);
+        }
 
     }
 
