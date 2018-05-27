@@ -2075,7 +2075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entrys:
   - executed: 0
-    executeTime: 60
+    executeTime: 1
     events:
       m_PersistentCalls:
         m_Calls:

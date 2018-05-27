@@ -15,6 +15,8 @@ public class PlatformMovementController : MovementController
 
     public UnityEvent onLandEvent;
 
+    public UnityEvent onMarioBop;
+
     public bool onGround;
     bool jumpCancel;
     public bool jumped;
@@ -99,6 +101,8 @@ public class PlatformMovementController : MovementController
             MovementController mc = collider.gameObject.GetComponent<MovementController>();
             if (mc != null)
                 mc.StunLock(0.25f);
+
+            onMarioBop.Invoke();
         }
     }
 
