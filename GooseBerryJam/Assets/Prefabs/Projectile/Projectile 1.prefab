@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e36fce971255b04fb4564ea7726d693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockback: 1
+  knockback: 10
   OnHit:
     m_PersistentCalls:
       m_Calls:

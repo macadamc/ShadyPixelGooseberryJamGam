@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Shooter-1
   m_EditorClassIdentifier: 
   obj: {fileID: 1062772910601324, guid: 49b2cb6990bddd645b765ed2e961d6a4, type: 2}
-  weight: 1
+  weight: 10

@@ -22,8 +22,8 @@ public class Knockback : MonoBehaviour
             mc.StunLock(moveStunTime);
 
             Vector2 k = (collision.gameObject.transform.position - transform.position).normalized * knockback;
-            k.x = k.x * 10f;
-            mc.AddKnockback(k);
+            k.x = k.x * 2f;
+            mc.SetKnockback(k);
         }
 
         OnHit.Invoke();

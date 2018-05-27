@@ -42,7 +42,15 @@ public class PlatformMovementController : MovementController
         if (inputController.action == true && onGround && !jumped)
             Jump(jumpStrength);
 
-        Vector2 newVel = new Vector2(inputController.move.x * moveSpeed, rb.velocity.y) + knockback;
+        Vector2 newVel;
+        if(knockback.magnitude > 0.05f)
+        {
+            newVel = new Vector2(0, 0) + knockback;
+        }
+        else
+        {
+            newVel = new Vector2(inputController.move.x * moveSpeed, rb.velocity.y) + knockback;
+        }
 
 
         if(!onGround && inputController.action == false && rb.velocity.y > 0 && jumpCancel == false)
