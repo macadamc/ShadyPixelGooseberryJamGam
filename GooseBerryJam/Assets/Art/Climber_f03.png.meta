@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 7fb4c4d5b58ac3741985ce53c1584a9c
+guid: 70988a76aa88ac94e8387efa61a46e2f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Climber_0
-    21300002: Climber_1
-    21300004: Climber_2
-    21300006: Climber_3
-    21300008: Climber_4
-    21300010: Climber_5
-    21300012: Climber_6
-    21300014: Climber_7
+    21300000: Climber_f03_0
+    21300002: Climber_f03_1
+    21300004: Climber_f03_2
+    21300006: Climber_f03_3
+    21300008: Climber_f03_4
+    21300010: Climber_f03_5
+    21300012: Climber_f03_6
+    21300014: Climber_f03_7
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -50,12 +50,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -92,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Climber_0
+      name: Climber_f03_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 203fc3d8d58ee1e46806c156099623cd
+      spriteID: c651c3ad5c111524c8aa284a52bbf9ed
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_1
+      name: Climber_f03_1
       rect:
         serializedVersion: 2
         x: 32
@@ -126,13 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c28aef4878e32d4381f614d98d33514
+      spriteID: 8b760ed6c4674eb4293bb8126a11884d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_2
+      name: Climber_f03_2
       rect:
         serializedVersion: 2
         x: 64
@@ -146,13 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca0a6cdfb9f1da840a73f650a16b1a75
+      spriteID: 5ba68dec80eb7874d96f51c9f22761db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_3
+      name: Climber_f03_3
       rect:
         serializedVersion: 2
         x: 96
@@ -166,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1665d92e066a5e48b636d0a6985f372
+      spriteID: 7401534dde266b8438f9073bc5d60e48
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_4
+      name: Climber_f03_4
       rect:
         serializedVersion: 2
         x: 0
@@ -186,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318527eeda5837e49b555d17fb7e8cbc
+      spriteID: 7c863d85438a9a54aa3d8cdfe56d7c6a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_5
+      name: Climber_f03_5
       rect:
         serializedVersion: 2
         x: 32
@@ -206,13 +206,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd0309f4a23ba64d9322e365b14d1a2
+      spriteID: 47f5bbb98a0d43843bc2d3efcd5b218f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_6
+      name: Climber_f03_6
       rect:
         serializedVersion: 2
         x: 64
@@ -226,13 +226,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce89948c33457846bff8288c495bb22
+      spriteID: 11c41931545e4c541862227f82675354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Climber_7
+      name: Climber_f03_7
       rect:
         serializedVersion: 2
         x: 96
@@ -246,7 +246,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9378f35d7c4de554d90f21496bf0e6f6
+      spriteID: 03385096ae507ee409e7ab500b66d7c9
       vertices: []
       indices: 
       edges: []
@@ -254,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 756a515362d98474c9e66e51619e0f4a
+    spriteID: 42f285817ab003a458eb15ca4320711f
     vertices: []
     indices: 
     edges: []
