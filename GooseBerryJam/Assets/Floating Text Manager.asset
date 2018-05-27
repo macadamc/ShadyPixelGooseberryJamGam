@@ -8,11 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9951bb23c328ccf438fd89a3c0726400, type: 3}
-  m_Name: Pickup
+  m_Script: {fileID: 11500000, guid: 0691146e44585e041b462412835afb23, type: 3}
+  m_Name: Floating Text Manager
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 80665f6a1186e1d4587aa1ec8c727370, type: 3}
-  volumeMin: 1
-  volumeMax: 1
-  pitchMin: 1
-  pitchMax: 1.2
+  floatingPointsPrefab: {fileID: 0}

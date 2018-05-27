@@ -27,7 +27,6 @@ public class HeathPickup : Pickup
         else
         {
             OnPickedUpAtFullHP.Invoke();
-            score.ApplyChange(scoreOnFullHealth);
         }
         
     }

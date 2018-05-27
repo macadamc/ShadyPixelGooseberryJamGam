@@ -8,25 +8,19 @@ public class ScoreManager : ScriptableObject {
 
     public IntVariable scoreVar;
     public IntVariable comboVar;
-    public GameObject floatingPointsPrefab;
-    int lastPoints;
+    public FloatingTextManager FloatingTextManager;
 
     public void AddPointsCombo(int value)
     {
         scoreVar.value += (value * (1+comboVar.value));
-        lastPoints = (value * (1 + comboVar.value));
+        FloatingTextManager.SetText((value * (1 + comboVar.value)).ToString());
     }
 
     public void AddPointsFlat(int value)
     {
         scoreVar.value += value;
-        lastPoints = value;
+        FloatingTextManager.SetText(value.ToString());
     }
 
-    public void CreateFloatingPointsObj(GameObject spawnPosObj)
-    {
-        GameObject ft = Instantiate(floatingPointsPrefab, GameObject.Find("Manager").transform.Find("WorldSpaceCanvas"));
-        ft.transform.position = spawnPosObj.transform.position;
-        ft.GetComponent<Text>().text = lastPoints.ToString();
-    }
+    
 }
