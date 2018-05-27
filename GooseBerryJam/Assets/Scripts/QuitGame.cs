@@ -16,6 +16,12 @@ public class QuitGame : MonoBehaviour {
 
     public void Quit()
     {
+        StartCoroutine(QuitCoroutine());
+    }
+
+    public IEnumerator QuitCoroutine()
+    {
+        yield return new WaitForSeconds(1.0f);
 
         if (Application.isEditor)
         {
