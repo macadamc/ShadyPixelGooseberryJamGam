@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf3f178efed8f942b429717c00e1e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  value: 3
   intVarToSet: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
