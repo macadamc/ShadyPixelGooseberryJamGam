@@ -18,7 +18,7 @@ public class Bomb : Pickup
     {
         foreach(Transform  t in activeEnemys.Items)
         {
-            if(t.gameObject.GetComponent<SpriteRenderer>().isVisible)
+            if(t.gameObject.GetComponent<SpriteRenderer>())
             {
                 t.GetComponent<Health>().Set(0);
             }
