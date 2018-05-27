@@ -6,6 +6,10 @@ TextureImporter:
     21300002: DollarBill_1
     21300004: DollarBill_2
     21300006: DollarBill_3
+    21300008: DollarBill_4
+    21300010: DollarBill_5
+    21300012: DollarBill_6
+    21300014: DollarBill_7
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -102,7 +106,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f01728e33d88df045952ef2dd9baa64e
+      spriteID: 28157f3b85da4324b8096206dd3c2dc0
       vertices: []
       indices: 
       edges: []
@@ -122,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02f5ebce03998a446ad1c882db482149
+      spriteID: 6407b72da8b8a5f42babc7a501670f38
       vertices: []
       indices: 
       edges: []
@@ -142,7 +146,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8afc59f7bbad65e41b77cb30eb416d79
+      spriteID: db19ed845de503a41863b27b1f98e451
       vertices: []
       indices: 
       edges: []
@@ -162,7 +166,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7622c172e1f16094d8795c84af521924
+      spriteID: d9fa65f08f6637b499051b184a90daec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DollarBill_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3602dbf85c051c41bc44837d0aada0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DollarBill_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e0ff7f3d876d0468bd81a0fab591f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DollarBill_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b36612ebcc452840a0dea333a0e76dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DollarBill_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e81cba1f3c828d4891b2b87ecd0dc52
       vertices: []
       indices: 
       edges: []

@@ -102,5 +102,10 @@ public class PlatformMovementController : MovementController
         }
     }
 
+    public void Stop()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
 
 }
