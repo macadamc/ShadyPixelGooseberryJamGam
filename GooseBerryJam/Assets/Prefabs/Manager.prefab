@@ -69,8 +69,8 @@ GameObject:
   - component: {fileID: 224513772509934964}
   - component: {fileID: 223641175757013702}
   - component: {fileID: 114844934351801334}
-  - component: {fileID: 114984594014515730}
   - component: {fileID: 114023401986769944}
+  - component: {fileID: 114294587560221352}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -349,7 +349,6 @@ GameObject:
   - component: {fileID: 114029323200042958}
   - component: {fileID: 114410004810989822}
   - component: {fileID: 114513873066257378}
-  - component: {fileID: 114369839544733670}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1035,6 +1034,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114294587560221352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1251242939387790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99146062d2ff040498bfa24bd655f814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114307271361863564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1171,38 +1181,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114369839544733670
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1640440848625758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b4187226e0af340b397d2c95f862d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBeforeAcceptInput: 0.5
-  acceptInputTime: 0
-  buttonEvents:
-  - buttonName: Cancel
-    OnPressedEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114791239989081110}
-          m_MethodName: Load
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Title
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    pressed: 0
 --- !u!114 &114386735056821456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1270,11 +1248,11 @@ MonoBehaviour:
   - {fileID: 0}
   enemysSet: {fileID: 11400000, guid: e69dc77822d6b7849b90ec1f181a7a38, type: 2}
   startingEnemys: {fileID: 11400000, guid: fb03ac6f89218da4aa79e611a6666601, type: 2}
-  minSpawnTime: 0.1
-  maxSpawnTime: 0.5
-  currentMaxEnemyAmount: 4
+  minSpawnTime: 0.3
+  maxSpawnTime: 0.75
+  currentMaxEnemyAmount: 5
   totalMaxEnemyAmount: 20
-  maxEnemyIncreaseDelay: 8
+  maxEnemyIncreaseDelay: 10
   nextSpawnTime: 0
   nextMaxEnemyIncrease: 0
 --- !u!114 &114427707919060442
@@ -1749,7 +1727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
+  m_SubmitButton: Fire1
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
@@ -1863,6 +1841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bf57998b68e71458da7ad1cb476386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 1
 --- !u!114 &114793686964561206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2144,22 +2123,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 0
---- !u!114 &114984594014515730
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251242939387790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &114984635735495084
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -337,8 +337,8 @@ MonoBehaviour:
   overheatThreshhold: 10
   warningThresholdOn: 8
   warningThresholdOff: 7
-  normalCooldown: 1.5
-  overheatCooldown: 1.5
+  normalCooldown: 2
+  overheatCooldown: 2
   attackHeat: 1.5
   attackJump: 4
   onAttackEvent:
@@ -510,7 +510,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 4
   knockback: {x: 0, y: 0}
-  knockbackDecel: 20
+  knockbackDecel: 15
   inputController: {fileID: 0}
   stunlockNextInputTime: 0
   jumpStrength: 5
