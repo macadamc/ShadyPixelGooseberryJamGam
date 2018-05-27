@@ -10,12 +10,15 @@ public class SaveLoadManager : ScriptableObject
     [HideInInspector]
     public string filePath;
 
-    public Dictionary<string, int> data;
+    public Dictionary<string, int> data = new Dictionary<string, int>();
 
     public IntVariable highScore;
 
     public void LoadFromFile()
     {
+        filePath = Application.persistentDataPath + "/HighScore.bin";
+        Debug.Log(filePath);
+        data = new Dictionary<string, int>();
         FileStream stream = File.Open(filePath, FileMode.Open);
         var formatter = new BinaryFormatter();
         if (stream.Length != 0)
