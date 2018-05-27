@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 58381765521233990}
   - component: {fileID: 114027460939240060}
   - component: {fileID: 114030002157302232}
-  - component: {fileID: 114664531914721516}
+  - component: {fileID: 114581473669861010}
   - component: {fileID: 114064119918459470}
   m_Layer: 11
   m_Name: Bomb
@@ -310,17 +310,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4714506222461840}
+        m_MethodName: SetParent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4694234007376016}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   EnemySpawnChange: 2
   activeEnemys: {fileID: 11400000, guid: 3f950a391b2c9cf45b229690e9723f1f, type: 2}
---- !u!114 &114664531914721516
+--- !u!114 &114581473669861010
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470849113162588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1440dcf76909cd74aa19d6d2aaea8910, type: 3}
   m_Name: 
@@ -345,7 +356,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190973506603974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c06240782bb83b4d8ad232d08db8d94, type: 3}
   m_Name: 
