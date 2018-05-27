@@ -283,7 +283,7 @@ MonoBehaviour:
   maxHP: {fileID: 11400000, guid: 932ab8ff937b49e41ad6b0a07b02ebe5, type: 2}
   score: {fileID: 11400000, guid: ff9bd88e79c8c8247b599fb462472bd2, type: 2}
   scoreOnFullHealth: 1000
-  ftm: {fileID: 0}
+  ftm: {fileID: 11400000, guid: 55b5a86b296f7f44280ba3f75f39676a, type: 2}
   OnPickedUpAtFullHP:
     m_PersistentCalls:
       m_Calls:

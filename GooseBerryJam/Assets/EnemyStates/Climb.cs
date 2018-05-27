@@ -70,7 +70,7 @@ public class Climb : EnemyState
         {
             //Vector2[] dirs = new Vector2[5] { Vector2.left, Vector2.right, Vector2.up, new Vector2(1, 1), new Vector2(-1, 1) };
 
-            ic.move = directions[Random.Range(0, directions.Length)];
+            ic.move = directions[Random.Range(0, directions.Length)].normalized;
         }
         else
         {
