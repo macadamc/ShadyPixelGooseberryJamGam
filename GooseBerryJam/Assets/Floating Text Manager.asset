@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0691146e44585e041b462412835afb23, type: 3}
   m_Name: Floating Text Manager
   m_EditorClassIdentifier: 
-  floatingPointsPrefab: {fileID: 0}
+  floatingPointsPrefab: {fileID: 1643901839697650, guid: a740075b447be5f42925e8ef2145f7c4,
+    type: 2}

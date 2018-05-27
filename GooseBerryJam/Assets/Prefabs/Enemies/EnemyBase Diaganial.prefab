@@ -244,7 +244,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 2.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf3f178efed8f942b429717c00e1e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  value: 1
   intVarToSet: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
@@ -482,7 +482,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 20eca6dd7ba88ab4bb821c4cc04df16c, type: 2}
+      - m_Target: {fileID: 11400000, guid: 55b5a86b296f7f44280ba3f75f39676a, type: 2}
         m_MethodName: CreateFloatingPointsObj
         m_Mode: 2
         m_Arguments:

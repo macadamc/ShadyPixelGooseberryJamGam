@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreVar: {fileID: 11400000, guid: ff9bd88e79c8c8247b599fb462472bd2, type: 2}
   comboVar: {fileID: 11400000, guid: 2a207af28b0cab34db32dba98ee417df, type: 2}
-  floatingPointsPrefab: {fileID: 1643901839697650, guid: a740075b447be5f42925e8ef2145f7c4,
+  FloatingTextManager: {fileID: 11400000, guid: 55b5a86b296f7f44280ba3f75f39676a,
     type: 2}
