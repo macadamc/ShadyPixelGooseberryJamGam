@@ -13,12 +13,22 @@ public class OnButtonPressedEvent : MonoBehaviour {
         public bool pressed;
     }
 
+    public float timeBeforeAcceptInput = 1f;
+    public float acceptInputTime;
+
     public List<ButtonEventInfo> buttonEvents = new List<ButtonEventInfo>();
 
-
-	// Update is called once per frame
-	void Update ()
+    private void OnEnable()
     {
+        acceptInputTime = Time.time + timeBeforeAcceptInput;
+    }
+
+    // Update is called once per frame
+    void Update ()
+    {
+        if (Time.time <= acceptInputTime)
+            return;
+
 		foreach(ButtonEventInfo buttonEvent in buttonEvents)
         {
             if (Input.GetButtonDown(buttonEvent.buttonName) && !buttonEvent.pressed)
