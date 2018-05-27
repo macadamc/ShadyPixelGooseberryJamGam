@@ -291,11 +291,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 223635857349683508, guid: 1b6f3db07bc20964dbf8f06220195ffd,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 114410004949860522, guid: 1b6f3db07bc20964dbf8f06220195ffd,
         type: 2}
       propertyPath: spawners.Array.data[0]
@@ -316,6 +311,11 @@ Prefab:
       propertyPath: spawners.Array.data[3]
       value: 
       objectReference: {fileID: 262014989}
+    - target: {fileID: 223635857349683508, guid: 1b6f3db07bc20964dbf8f06220195ffd,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6f3db07bc20964dbf8f06220195ffd, type: 2}
   m_IsPrefabAsset: 0

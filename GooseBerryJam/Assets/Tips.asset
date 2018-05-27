@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb28df0b86017d4697c2f496cfd5b2a, type: 3}
+  m_Name: Tips
+  m_EditorClassIdentifier: 
+  strings:
+  - Don't let too many people up the wall!
+  - Use people on top of the wall to keep your combo going while you are cooling down!
+  - Some climbers buff eachother! Maybe take them out first?
+  - Watch your heat meter!
+  - Waterbottles can help when you're overheating!
+  - Attacking too fast will cause you to overheat..
+  - I'm really rich!
+  - A Small Loan of a Million Dollars
+  - '"I will build a great, great wall on our southern border, and I will have Mexico
+    pay for that wall. Mark my words."  Campaign launch rally, 15/6/15'
