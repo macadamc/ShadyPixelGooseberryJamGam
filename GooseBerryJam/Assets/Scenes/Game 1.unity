@@ -891,6 +891,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114091428924877572, guid: 0649bb7042db00741b2de63ca363162f,
+        type: 2}
+      propertyPath: normalCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114091428924877572, guid: 0649bb7042db00741b2de63ca363162f,
+        type: 2}
+      propertyPath: overheatCooldown
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0649bb7042db00741b2de63ca363162f, type: 2}
   m_IsPrefabAsset: 0
