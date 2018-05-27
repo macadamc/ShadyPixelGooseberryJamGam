@@ -9,6 +9,7 @@ public class HeathPickup : Pickup
     public IntVariable score;
     UnityAction useAction;
     public int scoreOnFullHealth;
+    public FloatingTextManager ftm;
 
     public UnityEvent OnPickedUpAtFullHP;
     private void Awake()
@@ -22,6 +23,7 @@ public class HeathPickup : Pickup
         Health hp = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
         if (hp.value < maxHP.value)
         {
+            ftm.CreateFloatingPointsObj(gameObject);
             hp.Change(1);
         }
         else
